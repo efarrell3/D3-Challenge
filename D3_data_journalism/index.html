@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>D3Times</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/d3Style.css">
+  <link rel="stylesheet" href="app.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-12">
+        <h1>D3Times</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12  col-md-9">
+        <div id="scatter">
+       <!-- We append our chart here. -->
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6  col-md-4">
+      <div class="article">
+        <h2>Poverty and the Uninsured:</h2>
+        <p>Anyone in low-income households are certainly more likely to be uninsured than people in higher income households, 
+          but not all uninsured adults are in families with low incomes. Low-income housing may be an indication of unemplopyment, which also would be an indicator of a lack of helathcare. 
+          Texas has the highest percent of uninsured adults, 
+          but does not have the highest percent of families in poverty. There is not a perfecnt trend between %lacking healthcare and %in poverty, but there is a potential relationship.</p>
+      </div>
+    </div>
+    <div class="col-xs-6  col-md-4">
+      <div class="article">
+        <h2>Poverty and Smoking:</h2>
+        <p>In the U.S., people living below the poverty level have higher rates of cigarette smoking than the general population.  States like Texas and California fall around the median in terms of poverty rates, but 
+          have some of the lowest rates of smoking relative to their populations.  There are other factors that might contribute to the % that smoke, one could be taxes on cigarettes, which tend to vary drastically state to state.
+        </p>
+      </div>
+    </div>
+    <div class="col-xs-6  col-md-4">
+      <div class="article">
+        <h2>Poverty and Obesity:</h2>
+        <p>Poverty and obesity have been linked in studies that look at food deserts.  These are places where healthy food is too expensive or unavailable, and fast food is their only option.  Again, there is an upward, but not 
+          perfect trend between poverty and obesity percentage.  American obesity is staggeringly high for all the states, that may have something to do with income, but is also affected by consumption habits, which are much more unhealthy
+          compared to other countries.  
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6  col-md-4">
+      <div class="article">
+        <h2>Age and the Uninsured:</h2>
+        <p>Healthcare coverage may come from employment or can be purchased in the U.S., this means that people entering the work force or that have less money may not be able to afford healthcare.  This trend can be seen in the data above.  
+          However, that is not the only factor, perhaps the states that are at the top percentage of lacking healthcare have less money and can't afford healthcare or they have larger families of uninsured people.
+        </p>
+      </div>
+    </div>
+    <div class="col-xs-6  col-md-4">
+      <div class="article">
+        <h2>Age and Smoking:</h2>
+        <p>States with higher age groups have a larger percent of smoker.  This is a strong trend and could be due to people having trouble quitting smoking.  
+        </p>
+      </div>
+    </div>
+    <div class="col-xs-6  col-md-4">
+      <div class="article">
+        <h2>Age and Obesity:</h2>
+        <p>There does not appear to be a strong trend between obesity and age.  
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6  col-md-4">
+      <div class="article">
+        <h2>Income and the Uninsured:</h2>
+        <p>  There is a downward trend between %lacking healthcare and the median household income.  This would make sense because a greater income typically indicates employment and larger salaried employment comes with benefits such as healthcare.
+
+        </p>
+      </div>
+    </div>
+    <div class="col-xs-6  col-md-4">
+      <div class="article">
+        <h2>Income and Smoking:</h2>
+        <p>A household's income contributes directly to the level of poverty. Similar to poverty percent and smoking percent, there is a negative trend between smoking and median income.  The more that families make, the less likely they are to smoke.
+        </p>
+      </div>
+    </div>
+    <div class="col-xs-6  col-md-4">
+      <div class="article">
+        <h2>Income and Obesity:</h2>
+        <p> Overall obesity trends negatively with median household income, as more money is made, healthier food can be purchased since it is more expensive.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Footer-->
+  <div id="footer">
+    <p>Eric Farrell &copy;2021</p>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+  <script type="text/javascript" src="assets/js/functions.js"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
+
+</body>
+
+</html>
